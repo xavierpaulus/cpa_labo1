@@ -1,6 +1,13 @@
 language: php
 php:
-  - '7.3'
-script: ./build.sh
+- '7.3'
+script: "./build.sh"
 before_install:
-  - chmod +x build.sh
+- chmod +x build.sh
+deploy:
+  provider: heroku
+  api_key:
+    secure: ADf1U4kVUsr9/vuXV0+zDFl/a7r4T+QYwu2hr59Sv5jKPsTbMnZ/BoKR9uzdKDbQkt2AGjUaoiwiiZz+LSOLGgasZx7xKXKCOPPpFuN357vBPZZrUzTrizPIPaEBjbyVy5WjQKH9cf2ckeZsdBhEKB8aZr5ZTx0mndKagBoighw83ORzG1quAp4NnVFa8Xe9d4ZuP9CrQUR6oKuuqcceB7c+h7HjE9kWE6rJPZv9StE+fR6SxusuzKL4MvWTdGKddyQvfzD3iaB1R4kT1Q6rSWuiLH/SG/afnoBqVSawO0JmULoz2ELqaMjuF9ZddRJ/PZ+KleDAAKganj9S3mCPWk2SP8ZYR9qgA++m+Xx0ipAbVXLcSmE69AzHBfozuhIYbs5s0YHRZEuW9IcNv44Wicebid84ZDXRENxeFmuDAEiejtRYhfCV+/xM/wwERDsivOAmxBApTn5Ass/3kEgrHk2iu+DEAF8+ALx5CQWaI+icHuVQ2//QZOKjwqOXqeZXL/tU4pIrV54jQFf1SVGN1Ol8EYU0VFAvohNyi5/yTrg1tZDkkTei2PhQ5A+ZTRJQm1fiZ6xDI+iSFpOdwSp8HVMGWN8rk5f/FtJb1leMJ4sYyo1uJg2rxF734RmfIfqoyGS4fQSL6Y9nR7PiajJ1y6bHYFt/StZWLWxmx0nRZsk=
+  app: cpalabo1
+  on:
+    repo: xavierpaulus/cpa_labo1
