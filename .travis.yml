@@ -1,9 +1,9 @@
 language: php
 php:
 - '7.3'
-script: "./build.sh"
+script: "test/build.sh"
 before_install:
-- chmod +x build.sh
+- chmod +x test/build.sh
 deploy:
   provider: heroku
   api_key:
