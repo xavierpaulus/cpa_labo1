@@ -1,4 +1,6 @@
 language: php
 php:
   - '7.3'
-script: ./install.sh
+script: ./build.sh
+before_install:
+  - chmod +x build.sh
